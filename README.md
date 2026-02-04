@@ -1,7 +1,3 @@
-Com certeza! Um README bem estruturado é o que diferencia um "projeto de estudante" de um "projeto de desenvolvedor profissional" no GitHub. Ele é a primeira coisa que um recrutador ou outro programador vai ler.
-
-Aqui está um modelo completo e profissional para este projeto. Podes copiar e colar no ficheiro README.md na pasta raiz do teu projeto (aquela onde está o docker-compose.yml).
-
 🚀 Microsserviços com Java & Spring Cloud: Venda e Financeiro
 Este projeto é uma demonstração prática de uma arquitetura de microsserviços utilizando o ecossistema Spring. O objetivo principal foi implementar a comunicação síncrona entre serviços independentes, utilizando Docker para orquestração e OpenFeign para chamadas HTTP.
 

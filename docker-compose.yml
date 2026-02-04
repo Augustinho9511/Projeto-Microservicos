@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  financeiro:
+    build: ./financeiro-service
+    container_name: financeiro-service
+    ports:
+      - "8082:8082"
+    networks:
+      - rede-projeto
+
+  venda:
+    build: ./venda-service
+    container_name: venda-service
+    ports:
+      - "8081:8081"
+    environment:
+      # Importante: No Docker, um serviço chama o outro pelo NOME do serviço, não por localhost
+      - FINANCEIRO_URL=http://financeiro:8082
+    depends_on:
+      - financeiro
+    networks:
+      - rede-projeto
+
+networks:
+  rede-projeto:
+    driver: bridge
